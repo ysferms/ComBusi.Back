@@ -14,6 +14,7 @@ namespace ComBusi.Back.Controllers
     [HttpGet]
     public ActionResult<IEnumerable<string>> Get()
     {
+      
       return new string[] { "test", "value2" };
     }
 
