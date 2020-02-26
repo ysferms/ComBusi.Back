@@ -15,6 +15,6 @@ namespace ComBusi.Entity
 
     public DbSet<Company> Companies { get; set; }
     public DbSet<Branch> Branches { get; set; }
-
+    public DbSet<Test> Tests { get; set; }
   }
 }

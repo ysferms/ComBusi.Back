@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ComBusi.Entity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ComBusi.Back.Controllers
 {
@@ -10,6 +12,15 @@ namespace ComBusi.Back.Controllers
   [ApiController]
   public class ValuesController : ControllerBase
   {
+    private ComBusiContext context;
+    public ValuesController(ComBusiContext context)
+    {
+      this.context = context;
+        
+    }
+
+
+
     // GET api/values
     [HttpGet]
     public ActionResult<IEnumerable<string>> Get()
@@ -22,7 +33,11 @@ namespace ComBusi.Back.Controllers
     [HttpGet("{id}")]
     public ActionResult<string> Get(int id)
     {
-      return "value";
+      
+      var a =  context.Branches.FirstOrDefault();
+
+
+       return "value";
     }
 
     // POST api/values
