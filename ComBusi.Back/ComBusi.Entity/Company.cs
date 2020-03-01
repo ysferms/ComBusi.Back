@@ -8,10 +8,11 @@ namespace ComBusi.Entity
   {
     public string Name { get; set; }
     public string ShortName { get; set; }
-    public short Foundationyear { get; set; }
+
     public int BranchId { get; set; }
     public string Email { get; set; }
     public int CompanyInfoId { get; set; }
     public Branch Branch { get; set; }
+    public CompanyInformation CompanyInformation { get; set; }
   }
 }

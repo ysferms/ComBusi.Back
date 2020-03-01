@@ -10,6 +10,8 @@ namespace ComBusi.Entity
     [StringLength(25)]
     [MaxLength(25)]
     public string Name { get; set; }
+    public int AdressId { get; set; }
+    public Adress Adress { get; set; }
 
   }
 }
