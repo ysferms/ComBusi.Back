@@ -14,5 +14,7 @@ namespace ComBusi.Entity
     public int CompanyInformationId { get; set; }
     public Branch Branch { get; set; }
     public CompanyInformation CompanyInformation { get; set; }
+
+   
   }
 }
